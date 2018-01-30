@@ -1,9 +1,33 @@
-new codetools::checkUsage()
-#better work!
 
-does this work?
-I hope this works!
-  
-1234
-6453
-askldfjadsidhsfinb
+t<-1.96
+p<-.5
+e<-.05
+N<-500
+n<-((t^2)*(p*(1-p)))/e^2
+
+Fin.Pop<-n/1+(((t^2)*(p*(1-p)))/((e^2)*N))
+
+Sample.size<-function(t,e,p,N){
+  n<-((t^2)*(p*(1-p)))/e^2
+  n/1+(((t^2)*(p*(1-p)))/((e^2)*N))
+}
+Sample.size(1.96,.05,.5,500) 
+
+#result: 384.9283
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
